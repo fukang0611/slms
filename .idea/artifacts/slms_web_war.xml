@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="slms-web:war">
+    <output-path>$PROJECT_DIR$/slms-web/target</output-path>
+    <root id="archive" name="slms-web.war">
+      <element id="artifact" artifact-name="slms-web:war exploded" />
+    </root>
+  </artifact>
+</component>
