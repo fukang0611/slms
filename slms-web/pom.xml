@@ -19,13 +19,13 @@
     <!-- 依赖配置 -->
     <dependencies>
 
-        <!-- 模块依赖 开始 -->
+        <!-- 模块依赖 -->
         <dependency>
             <groupId>com.fukang.slms</groupId>
             <artifactId>slms-base</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!-- 模块依赖 结束 -->
+        <!-- 框架依赖 -->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>

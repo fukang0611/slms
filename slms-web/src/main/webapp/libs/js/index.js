@@ -14,7 +14,7 @@ $(function () {
         $('iframe').attr('src', href);
     });
 
-    var href = location.hash.substring(1) || '/slms/view/user_management/userList2.jsp';
+    var href = location.hash.substring(1) || '/slms/view/user_management/userList.jsp';
     $('iframe').attr('src', href);
 
     $(window).on('blur', function () {

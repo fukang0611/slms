@@ -7,16 +7,16 @@
     <file url="file://$PROJECT_DIR$/slms-web/src/main/resources/log4j2.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/bootstrap" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/bootstrap/css/bootstrap-table.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/css/index.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/formValidator/bootstrapValidator.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/formValidator/bootstrapValidator.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/formValidator/bootstrapValidator.min.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/formValidator/bootstrapValidator.min.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/index.css" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/index.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/jquery-ui" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/jquery/jquery-1.11.3.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/jquery/jquery.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/jquery/jquery.simulate.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/libs/js/index.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/view/login/login.jsp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/slms-web/src/main/webapp/view/user_management/userReg.jsp" charset="GBK" />
   </component>

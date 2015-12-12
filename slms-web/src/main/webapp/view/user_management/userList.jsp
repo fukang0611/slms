@@ -27,17 +27,14 @@
            data-show-refresh="true"
            data-show-toggle="true"
            data-show-columns="true"
-           data-show-export="true"
            data-detail-view="true"
            data-detail-formatter="detailFormatter"
-           data-minimum-count-columns="2"
-           data-show-pagination-switch="true"
            data-pagination="true"
            data-id-field="id"
            data-page-list="[10, 25, 50, 100, ALL]"
            data-show-footer="false"
            data-side-pagination="server"
-           data-url="<%=path%>/user/getUsersAll.do"
+           data-url="<%=path%>/user/getUsersList.do"
            data-response-handler="responseHandler">
     </table>
 </div>
@@ -159,7 +156,6 @@
     function responseHandler(res) {
         // 遍历返回数据的rows
         $.each(res.rows, function (i, row) {
-            debugger;
             // $.inArray( value,array ) 得到value在array中的index,若没有则返回 -1
             // 此处:根据checked数组将已勾选rows的state赋值true,未勾选则false
             row.state = $.inArray(row.id, selections) !== -1;
@@ -179,10 +175,10 @@
     // 操作列按钮
     function operateFormatter(value, row, index) {
         return [
-            '<a class="like" href="javascript:likeUser(' + row + ')" title="喜欢">',
+            '<a class="like" href="javascript:likeUser(' + row.id + ')" title="喜欢">',
             '<i class="glyphicon glyphicon-heart"></i>',
-            '</a>  ',
-            '<a class="remove" href="javascript:delUsers(' + row.id + ')" title="删除">',
+            '</a>',
+            '<a class="remove" href="javascript:delUsers(\'' + row.id + '\')" title="删除">',
             '<i class="glyphicon glyphicon-remove"></i>',
             '</a>'
         ].join('');
@@ -206,8 +202,9 @@
     }
 
     // 喜欢用户
-    function likeUser(row) {
-        alert('You click like action, row: ' + JSON.stringify(row));
+    function likeUser(id) {
+        debugger;
+        alert('你点击的用户id: ' + id);
     }
 
     // 得到高度
