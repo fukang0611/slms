@@ -85,13 +85,13 @@
                     $.post($form.attr('action'), $form.serialize(), function (result) {
                         alert(result.msg + "  " + result.status);
                         if (result.status == "success") {
-                            window.location.href = "<%=path%>/view/user_management/user_list.jsp";
+                            window.location.href = "<%=path%>/view/index.jsp";
                         }
                     }, 'json');
                 });
     }
     function register() {
-        window.location.href = "<%=path%>/view/user_management/user_register.jsp";
+        window.location.href = "<%=path%>/view/user_management/userReg.jsp";
     }
 </script>
 </body>

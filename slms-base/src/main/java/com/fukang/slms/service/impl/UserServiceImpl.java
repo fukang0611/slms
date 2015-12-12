@@ -1,5 +1,6 @@
 package com.fukang.slms.service.impl;
 
+import com.fukang.slms.utility.Pager;
 import com.fukang.slms.utility.StringHandler;
 import com.fukang.slms.dao.IUserDao;
 import com.fukang.slms.model.UserModel;
@@ -29,8 +30,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public List getUsersAll() {
-        return iUserDao.getUsersAll();
+    public List getUsersList(Pager pager) {
+        return iUserDao.getUsersList(pager);
     }
 
     @Override

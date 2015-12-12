@@ -1,12 +1,14 @@
 package com.fukang.slms.controller;
 
 import com.fukang.slms.service.IUserService;
+import com.fukang.slms.utility.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -27,13 +29,14 @@ public class UserController extends BaseController {
         }
     }
 
-    @RequestMapping("/getUsersAll")
+    @RequestMapping("/getUsersList")
     @ResponseBody
-    public Object getUsersAll() {
+    public Object getUsersList(Pager pager) {
 
+        List userList = iUserService.getUsersList(pager);
         Map<String, Object> data = new HashMap<>();
-        data.put("total", 200);
-        data.put("rows", iUserService.getUsersAll());
+        data.put("total", pager.getTotalRows());
+        data.put("rows", userList);
         return data;
     }
 

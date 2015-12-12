@@ -2,40 +2,70 @@ package com.fukang.slms.utility;
 
 public class Pager {
 
-    private Integer pageNo;
-    private Integer pageSize;
-    private Integer totalRows;
+    private String search;
+    private String sort;
+    private String order;
+    private Integer limit;
+    private Integer offset;
+    private Long totalRows;
 
     public Pager() {
     }
 
-    public Pager(Integer pageNo, Integer pageSize, Integer totalRows) {
-        this.pageNo = pageNo;
-        this.pageSize = pageSize;
+    public Pager(String search, String sort, String order, Integer limit, Integer offset, Long totalRows) {
+        this.search = search;
+        this.sort = sort;
+        this.order = order;
+        this.limit = limit;
+        this.offset = offset;
         this.totalRows = totalRows;
     }
 
-    public Integer getPageNo() {
-        return pageNo;
+    public String getSearch() {
+        return search;
     }
 
-    public void setPageNo(Integer pageNo) {
-        this.pageNo = pageNo;
+    public void setSearch(String search) {
+        this.search = search;
     }
 
-    public Integer getPageSize() {
-        return pageSize;
+    public String getSort() {
+        return sort;
     }
 
-    public void setPageSize(Integer pageSize) {
-        this.pageSize = pageSize;
+    public void setSort(String sort) {
+        this.sort = sort;
     }
 
-    public Integer getTotalRows() {
+    public String getOrder() {
+        return order;
+    }
+
+    public void setOrder(String order) {
+        this.order = order;
+    }
+
+    public Integer getLimit() {
+        return limit;
+    }
+
+    public void setLimit(Integer limit) {
+        this.limit = limit;
+    }
+
+    public Integer getOffset() {
+        return offset;
+    }
+
+    public void setOffset(Integer offset) {
+        this.offset = offset;
+    }
+
+    public Long getTotalRows() {
         return totalRows;
     }
 
-    public void setTotalRows(Integer totalRows) {
+    public void setTotalRows(Long totalRows) {
         this.totalRows = totalRows;
     }
 }

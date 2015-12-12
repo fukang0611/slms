@@ -1,6 +1,7 @@
 package com.fukang.slms.dao;
 
 import com.fukang.slms.model.UserModel;
+import com.fukang.slms.utility.Pager;
 
 import java.util.List;
 
@@ -16,6 +17,6 @@ public interface IUserDao {
 
     UserModel getUserByUsername(String username);
 
-    List getUsersAll();
+    List getUsersList(Pager pager);
 
 }

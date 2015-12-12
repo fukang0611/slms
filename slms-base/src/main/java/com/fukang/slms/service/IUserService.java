@@ -1,6 +1,7 @@
 package com.fukang.slms.service;
 
 import com.fukang.slms.model.UserModel;
+import com.fukang.slms.utility.Pager;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ public interface IUserService {
 
     UserModel getUserByUsername(String username);
 
-    List getUsersAll();
+    List getUsersList(Pager pager);
 
     boolean addUser(UserModel user);
 
